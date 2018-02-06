@@ -8,5 +8,7 @@
     <string name="action_share">Share</string>
 
     <string name="up">Up</string>
+    <string name="snack_bar_text">Scroll to view all articles.</string>
+    <string name="see_more">See More</string>
 
 </resources>

@@ -23,4 +23,8 @@
     <color name="blue_accent_200">#536dfe</color>
 
     <color name="ltgray">#ffe0e0e0</color>
+
+    <color name="card_view_text_background_color">#7333</color>
+    <color name="card_view_primary_text_color">#eee</color>
+    <color name="card_view_subtext_color">#cdcdcd</color>
 </resources>

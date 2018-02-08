@@ -1,5 +1,7 @@
 package com.example.xyzreader.ui;
 
+import android.animation.AnimatorInflater;
+import android.animation.AnimatorSet;
 import android.app.Fragment;
 import android.app.LoaderManager;
 import android.content.Intent;
@@ -28,6 +30,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -156,15 +160,18 @@ public class ArticleDetailFragment extends Fragment implements
         mScrollView.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
             @Override
             public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
+                Animation fadeInAnimation = AnimationUtils.loadAnimation(getContext(), R.anim.fade_in);
                 if (scrollY != oldScrollY) {
                     fab.setVisibility(View.GONE);
                 }
 
                 if (scrollY == 0) {
+                    fab.startAnimation(fadeInAnimation);
                     fab.setVisibility(View.VISIBLE);
                 }
 
                 if (scrollY == (v.getChildAt(0).getMeasuredHeight() - v.getMeasuredHeight())) {
+                    fab.startAnimation(fadeInAnimation);
                     fab.setVisibility(View.VISIBLE);
                 }
             }

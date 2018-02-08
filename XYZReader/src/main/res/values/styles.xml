@@ -19,15 +19,15 @@
 
     <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
 
-        <item name="android:statusBarColor">@color/red_700</item>
+        <!--<item name="statusBarColor">@color/red_700</item>-->
 
-        <item name="android:colorPrimary">@color/red_500</item>
-        <item name="android:colorPrimaryDark">@color/red_700</item>
-        <item name="android:colorAccent">@color/blue_accent_200</item>
+        <item name="colorPrimary">@color/red_500</item>
+        <item name="colorPrimaryDark">@color/red_700</item>
+        <item name="colorAccent">@color/blue_accent_200</item>
     </style>
 
     <style name="Theme.Bacon.Detail">
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!--<item name="statusBarColor">@android:color/transparent</item>-->
     </style>
 
 </resources>
